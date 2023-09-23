@@ -8,7 +8,7 @@
     It also executes some of the esential functions (geometry, magnetic field,...) 
     Command:
         g++ helloworld.cpp Geometry.cpp MagField.cpp Measurements.cpp Seeder.cpp 
-        Logger.cpp KalmanFitting.cpp Writer.cpp -o helloworld.x 
+        Logger.cpp KalmanFitting.cpp Writer.cpp Estimator.cpp -o helloworld.x 
         -L/path/to/acts_install/lib -lActsPluginTGeo -lActsPluginJson -lActsCore 
         -I/path/to/acts_install/include/ -I$(root-config --incdir) 
         -I$(root-config --evelibs) $(root-config --libs) 
@@ -78,6 +78,7 @@
 #include "Logger.hpp"
 #include "KalmanFitting.hpp"
 #include "Writer.hpp"
+#include "Estimator.hpp"
 
 int main() {
     std::cout << "Hello world: I am alive." << std::endl;

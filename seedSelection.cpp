@@ -13,7 +13,7 @@
     that the maximum and minimum r values are on the edges between middle and 
     top/bottom SP means between to points of a duplet.
     Command:
-        g++ seedMapping.cpp Geometry.cpp MagField.cpp Seeder.cpp -o mapping.x
+        g++ seedSelection.cpp Geometry.cpp -o selection.x
         -L/path/to/acts_install/lib -lActsPluginTGeo -lActsPluginJson -lActsCore 
         -I/path/to/acts_install/include/ -I$(root-config --incdir) 
         -I$(root-config --evelibs) $(root-config --libs) 

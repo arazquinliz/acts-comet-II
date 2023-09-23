@@ -12,8 +12,7 @@
     and MaterialOutput.root. The propagation steps can be plotted out by using the
     plot_propagation.c program within root.
     Command:
-        g++ helloworld.cpp Geometry.cpp MagField.cpp Measurements.cpp Seeder.cpp 
-        Logger.cpp KalmanFitting.cpp Writer.cpp -o helloworld.x 
+        g++ propagator.cpp Geometry.cpp MagField.cpp Logger.cpp Writer.cpp -o propagator.x 
         -L/path/to/acts_install/lib -lActsPluginTGeo -lActsPluginJson -lActsCore 
         -I/path/to/acts_install/include/ -I$(root-config --incdir) 
         -I$(root-config --evelibs) $(root-config --libs) 

@@ -11,7 +11,10 @@
     a hyperparameter optimiser, this program only offers a first step tuning.
     All plots are saved in a histogram folder. Note it runs under the assumption
     that the maximum and minimum r values are on the edges between middle and 
-    top/bottom SP means between to points of a duplet.
+    top/bottom SP means between to points of a duplet. 
+    The spacepoints are outputed in spacepoints.txt and can be visualized with
+    plot_sp.txt in root. This is only interesting when working with a single
+    trajectory.
     Command:
         g++ seedSelection.cpp Geometry.cpp -o selection.x
         -L/path/to/acts_install/lib -lActsPluginTGeo -lActsPluginJson -lActsCore 
